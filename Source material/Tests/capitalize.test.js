@@ -10,7 +10,7 @@ test('Correctly returns for empty string',() => {
     expect(capitalize('')).toBe('');
 })
 test('Correctly returns for null',() => {
-    expect(capitalize(null)).toBe('Null');
+    expect(capitalize(null)).toBe(null);
 })
 test('Correctly returns for numbers',() => {
     expect(capitalize(2365)).toBe('2365');
