@@ -4,7 +4,7 @@ import isArrayLikeObject from'../src/isArrayLikeObject.js'
 test('Correctly determines if array object is arraylike', ()=> {
     expect(isArrayLikeObject(['one', 'two', 'three'])).toBe(true);
 })
-test('Correctly determines if array object is arraylike', ()=> {
+test('Correctly determines that string object is not arraylike', ()=> {
     expect(isArrayLikeObject('[one, two ,three]')).toBe(false);
 })
 test('Correctly determines if variable array object is arraylike', ()=> {
