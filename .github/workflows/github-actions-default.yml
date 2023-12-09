@@ -17,7 +17,6 @@ jobs:
 
     - name: npm install, npm test
       run: |
-        npm install
         npm install --save-dev jest
         npm install -D ts-node
 
