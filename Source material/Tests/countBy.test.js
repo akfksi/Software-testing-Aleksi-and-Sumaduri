@@ -36,5 +36,4 @@ describe('countBy', () => {
     expect(result).toEqual({ 1: 2, undefined: 2, null: 2, 2: 1 });
   });
 
-  // Add more test cases as needed
 });
