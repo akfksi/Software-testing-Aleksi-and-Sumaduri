@@ -19,6 +19,7 @@ jobs:
       run: |
         npm install --save-dev jest
         npm install -D ts-node
+        npm install --save-dev coveralls
 
         npm test
 
