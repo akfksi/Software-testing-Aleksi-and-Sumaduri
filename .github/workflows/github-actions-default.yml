@@ -18,6 +18,9 @@ jobs:
     - name: npm install, npm test
       run: |
         npm install
+        npm install jest
+        npm install -D ts-node
+
         npm test
 
     - name: Report Coveralls
