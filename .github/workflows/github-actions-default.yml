@@ -1,0 +1,32 @@
+
+on: push
+
+name: Coveralls
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+    - name: Set Jest permissions
+      run: chmod +x node_modules/.bin/jest
+      
+
+    - name: npm install, npm test
+      run: |
+        npm install
+        npm install --save-dev jest
+        npm install -D ts-node
+
+        npm test
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2.2.3
+      with:
+        github-token: ${{ github.token }}
+      

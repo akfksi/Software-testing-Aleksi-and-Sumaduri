@@ -22,8 +22,8 @@ describe('ceil', () => {
     expect(ceil(123.456, -1)).toBe(130);
   });
 
-  // You can also add edge cases or boundary tests
+
   it('should handle edge cases', () => {
-    // Add your edge case tests here
+    
   });
 });
