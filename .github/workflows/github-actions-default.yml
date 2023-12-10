@@ -25,7 +25,6 @@ jobs:
         npm install -D ts-node
 
         npm test
-
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.3
       with:
