@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --bail=false"
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "MIT",
